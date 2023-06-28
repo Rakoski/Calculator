@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, initial-scale-1.0" >
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body> 
+    <div class="main">
+        <div class="showing">
+            <div class="previous-operation" id="previous-operation"></div>
+            <div class="current-number" id="displayNumber"></div>
+        </div>
+        <div class="operations-container">
+            <button
+            class="clear"
+            onclick="javascript:reset();">
+            CLEAR
+          </button>
+          <button
+            class="btn-btn-blue"
+            id="deleteBtn"
+            onclick="">
+            DELETE
+          </button>
+          <div class="buttons-container">
+            <button class="btn" onclick="registerNumber(this);" data-number="7">7</button>
+            <button class="btn" onclick="registerNumber(this);" data-number="8">8</button>
+            <button class="btn" onclick="registerNumber(this);" data-number="9">9</button>
+            <button class="btn" onclick="registerOperator(this)" data-operator="/">÷</button>
+  
+            <button class="btn" onclick="registerNumber(this);" data-number="4">4</button>
+            <button class="btn" onclick="registerNumber(this);" data-number="5">5</button>
+            <button class="btn" onclick="registerNumber(this);" data-number="6">6</button>
+            <button class="btn" onclick="registerOperator(this)" data-operator="*">×</button>
+  
+            <button class="btn" onclick="registerNumber(this);" data-number="1">1</button>
+            <button class="btn" onclick="registerNumber(this);" data-number="2">2</button>
+            <button class="btn" onclick="registerNumber(this);" data-number="3">3</button>
+            <button class="btn" onclick="registerOperator(this)" data-operator="-">−</button>
+  
+            <button class="btn" onclick="registerNumber(this);" data-number="." id="pointBtn">.</button>
+            <button class="btn" onclick="registerNumber(this);" data-number="0">0</button>
+            <button class="btn" onclick="javascript:calculateExpression()" id="equalsBtn">=</button>
+            <button class="btn" onclick="registerOperator(this)" data-operator="+">+</button>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
