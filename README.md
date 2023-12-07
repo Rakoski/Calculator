@@ -1,6 +1,6 @@
-# calculator
+# Calculadora
 
-Repository for my simple first front-end project, the calculator.
+Repositório para minha calculadora web pra testar o github pages & javascript
 
-If you're insterested in this web project, check this one here:
+Você pode encontrá-la aqui:
 https://rakoski.github.io/
